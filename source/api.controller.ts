@@ -5,9 +5,9 @@ const app = express();
 app.use(express.json());
 let server: any;
 app.post('/api', (req: Request, res: Response) => {
-    let receivedArray: number[] = req.body.height; // Odczytaj dane z ciała żądania
+    let receivedArray: number[] = req.body.height;
     let result: number = trap(receivedArray);
-    res.json({ result }); // Odpowiedz w formacie JSON
+    res.json({ result });
 });
 
 const port = 3000;
