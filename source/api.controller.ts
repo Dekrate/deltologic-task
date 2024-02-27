@@ -1,3 +1,13 @@
+import express, { Request, Response, NextFunction } from 'express';
+const app = express();
+app.use(express.json());
+
+app.post('/api', (req: Request, res: Response) => {
+    let receivedArray: number[] = req.body.height; // Odczytaj dane z ciała żądania
+    let result: number = trap(receivedArray);
+    res.json({ result }); // Odpowiedz w formacie JSON
+});
+
 function trap(height: number[]): number {
     const n: number = height.length;
     if (n <= 2) {
@@ -24,3 +34,10 @@ function trap(height: number[]): number {
 
     return trappedWater;
 }
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
+
+export default app;
