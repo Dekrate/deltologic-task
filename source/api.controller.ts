@@ -1,43 +1,18 @@
-import express, { Request, Response, NextFunction } from 'express';
+import express, {Request, Response} from 'express';
+import trap from "./utils";
+
 const app = express();
 app.use(express.json());
-
+let server: any;
 app.post('/api', (req: Request, res: Response) => {
     let receivedArray: number[] = req.body.height; // Odczytaj dane z ciała żądania
     let result: number = trap(receivedArray);
     res.json({ result }); // Odpowiedz w formacie JSON
 });
 
-function trap(height: number[]): number {
-    const n: number = height.length;
-    if (n <= 2) {
-        return 0;
-    }
-
-    const leftMax: number[] = new Array(n);
-    const rightMax: number[] = new Array(n);
-
-    leftMax[0] = height[0];
-    for (let i = 1; i < n; i++) {
-        leftMax[i] = Math.max(leftMax[i - 1], height[i]);
-    }
-
-    rightMax[n - 1] = height[n - 1];
-    for (let i = n - 2; i >= 0; i--) {
-        rightMax[i] = Math.max(rightMax[i + 1], height[i]);
-    }
-
-    let trappedWater: number = 0;
-    for (let i = 0; i < n; i++) {
-        trappedWater += Math.min(leftMax[i], rightMax[i]) - height[i];
-    }
-
-    return trappedWater;
-}
-
 const port = 3000;
-app.listen(port, () => {
+server = app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
 
-export default app;
+

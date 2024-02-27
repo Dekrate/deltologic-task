@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e351a4d-76ad-4e61-a936-8fca8fbe2d07" name="Changes" comment="feat: ci/cd">
+    <list default="true" id="0e351a4d-76ad-4e61-a936-8fca8fbe2d07" name="Changes" comment="feat: tests">
       <change beforePath="$PROJECT_DIR$/.idea/stat.log" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stat.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/api.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/app.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source/app.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +42,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Jest.API Controller.executor": "Debug",
+    "Jest.API Controller.executor": "Run",
     "Jest.All Tests.executor": "Run",
+    "Jest.trap function tests.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
@@ -65,6 +69,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Acer\IdeaProjects\deltologic-task\source" />
     </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="C:\Users\Acer\IdeaProjects\deltologic-task\source\utils.ts" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -76,7 +83,7 @@
       <command value="jest" />
     </option>
   </component>
-  <component name="RunManager" selected="Jest.API Controller">
+  <component name="RunManager" selected="Jest.trap function tests">
     <configuration name="API Controller" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -95,6 +102,18 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trap function tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/source" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/source/app.test.ts" />
+      <test-names>
+        <test-name value="trap function tests" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -119,6 +138,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.trap function tests" />
         <item itemvalue="Jest.API Controller" />
         <item itemvalue="Jest.All Tests" />
         <item itemvalue="npm.dev" />
@@ -141,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709040530167</updated>
-      <workItem from="1709040533940" duration="2042000" />
+      <workItem from="1709040533940" duration="3351000" />
     </task>
     <task id="LOCAL-00001" summary="feat: finished coding">
       <option name="closed" value="true" />
@@ -159,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709042455739</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: ci/cd">
+      <option name="closed" value="true" />
+      <created>1709042659485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709042659485</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: tests">
+      <option name="closed" value="true" />
+      <created>1709042937807</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709042937807</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +204,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: finished coding" />
     <MESSAGE value="feat: ci/cd" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ci/cd" />
+    <MESSAGE value="test: tests" />
+    <MESSAGE value="feat: tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: tests" />
   </component>
 </project>
