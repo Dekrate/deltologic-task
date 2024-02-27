@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e351a4d-76ad-4e61-a936-8fca8fbe2d07" name="Changes" comment="feat: tests">
+    <list default="true" id="0e351a4d-76ad-4e61-a936-8fca8fbe2d07" name="Changes" comment="feat: refactoring">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/stat.log" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stat.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/api.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source/api.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/app.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/source/app.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -28,6 +28,9 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -42,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
     "Jest.API Controller.executor": "Run",
     "Jest.All Tests.executor": "Run",
     "Jest.trap function tests.executor": "Run",
@@ -83,7 +87,7 @@
       <command value="jest" />
     </option>
   </component>
-  <component name="RunManager" selected="Jest.trap function tests">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="API Controller" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -116,6 +120,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -126,23 +143,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Jest.trap function tests" />
         <item itemvalue="Jest.API Controller" />
         <item itemvalue="Jest.All Tests" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709040530167</updated>
-      <workItem from="1709040533940" duration="3351000" />
+      <workItem from="1709040533940" duration="3957000" />
     </task>
     <task id="LOCAL-00001" summary="feat: finished coding">
       <option name="closed" value="true" />
@@ -195,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709042937807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: refactoring">
+      <option name="closed" value="true" />
+      <created>1709044080990</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709044080990</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +221,7 @@
     <MESSAGE value="feat: ci/cd" />
     <MESSAGE value="test: tests" />
     <MESSAGE value="feat: tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: tests" />
+    <MESSAGE value="feat: refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: refactoring" />
   </component>
 </project>
